@@ -1,0 +1,6 @@
+{
+  "name": "Godas Business Corporation",
+  "description": "Industrial manufacturing company website for solar tunnel dryers, hybrid dryers, electric tray dryers, and food dehydration equipment in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

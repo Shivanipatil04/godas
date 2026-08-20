@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #16A34A;
+    --primary-hover: #15803D;
+    --secondary: #14532D;
+    --secondary-light: #166534;
+    --accent: #F4B400;
+    --accent-hover: #EAB308;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Utilities - Light Green, Golden Yellow & White Theme */
+.bg-gradient-industrial {
+  background: linear-gradient(135deg, #14532D 0%, #166534 50%, #16A34A 100%);
+}
+
+.bg-gradient-solar {
+  background: linear-gradient(135deg, #15803D 0%, #16A34A 60%, #F4B400 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #F4B400 0%, #FACC15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(22, 163, 74, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
