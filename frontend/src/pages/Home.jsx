@@ -11,7 +11,6 @@ import { testimonials as fallbackTestimonials } from '../data/testimonials';
 import { ProductCard } from '../components/ProductCard';
 import { IndustryGrid } from '../components/IndustryGrid';
 import { WhyChooseUs } from '../components/WhyChooseUs';
-import { ROICalculator } from '../components/ROICalculator';
 import { FAQAccordion } from '../components/FAQAccordion';
 import { companyInfo } from '../data/companyInfo';
 import { RevealOnScroll, RevealItem } from '../components/RevealOnScroll';
@@ -219,15 +218,6 @@ export function Home({ onOpenQuoteModal }) {
                   />
                 </RevealItem>
               ))}
-            </RevealOnScroll>
-          </div>
-        </section>
-
-        {/* INTERACTIVE ROI & FINANCIAL CALCULATOR */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <RevealOnScroll direction="up" duration={0.6}>
-              <ROICalculator onOpenQuoteModal={onOpenQuoteModal} />
             </RevealOnScroll>
           </div>
         </section>
