@@ -16,7 +16,7 @@ import { FAQAccordion } from '../components/FAQAccordion';
 import { companyInfo } from '../data/companyInfo';
 import { RevealOnScroll, RevealItem } from '../components/RevealOnScroll';
 import { getProducts, getTestimonials } from '../api';
-import solarTunnelHeroImg from '../assets/images/Godas_Hero.png';
+import solarTunnelHeroImg from '../assets/images/frontdryer.jpeg'; 
 
 export function Home({ onOpenQuoteModal }) {
   const testimonialScrollRef = useRef(null);
