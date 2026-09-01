@@ -7,6 +7,7 @@ import { companyInfo } from '../data/companyInfo';
 import { companyStats } from '../data/stats';
 import { RevealOnScroll, RevealItem } from '../components/RevealOnScroll';
 import logoImg from '../assets/logo.png';
+import founderImg from '../assets/images/founder.png';
 
 export function About({ onOpenQuoteModal }) {
   const companyHighlights = [
@@ -118,7 +119,7 @@ export function About({ onOpenQuoteModal }) {
                 <div className="md:col-span-4 flex flex-col items-center text-center">
                   <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-[#16A34A] shadow-lg mb-4 bg-slate-100">
                     <img
-                      src="src/assets/images/founder.png"
+                      src={founderImg}
                       alt="Founder - Godas Business Corporation"
                       className="w-full h-full object-cover object-top"
                     />
