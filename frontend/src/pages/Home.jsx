@@ -81,10 +81,10 @@ export function Home({ onOpenQuoteModal }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent sm:from-black/25 sm:via-transparent sm:to-transparent" />
 
           {/* Hero Content */}
-          <div className="relative z-10 w-full px-4 sm:px-8 md:px-10 lg:pl-[6vw] xl:pl-[7vw] py-6 sm:py-12 md:py-20">
+          <div className="relative z-10 flex h-full min-h-[280px] w-full flex-col justify-between px-4 sm:min-h-[400px] sm:px-8 md:min-h-[850px] md:px-10 lg:min-h-[950px] lg:pl-[6vw] xl:pl-[7vw] py-6 sm:py-10 md:py-16">
 
             <RevealOnScroll
-              className="max-w-[760px] space-y-2 sm:space-y-4 md:space-y-6 text-left"
+              className="max-w-[760px] space-y-2 sm:space-y-4 md:space-y-6 text-left pt-2 sm:pt-8 md:pt-10"
               direction="up"
               duration={0.6}
             >
@@ -99,28 +99,20 @@ export function Home({ onOpenQuoteModal }) {
 
               {/* Main Heading */}
               <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.1] text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]">
-                Sustainable{" "}
+                High Efficiency{" "}
                 <span className="text-[#4ADE80]">
-                  Food Dehydration Solutions
+                  solar tunnel dryers
                 </span>{" "}
-                with High-Efficiency Solar Tunnel Dryers
               </h1>
+            </RevealOnScroll>
 
-              {/* Description - short on mobile, full on sm+ */}
-              <p className="sm:hidden text-[11px] leading-snug text-white/90 max-w-[320px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-                Advanced Solar Tunnel Dryers for energy-efficient, hygienic drying of fruits, vegetables, herbs &amp; more.
-              </p>
-              <p className="hidden sm:block text-emerald-1 text-sm sm:text-base lg:text-lg leading-relaxed max-w-[700px] drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-                We manufacture advanced Solar Tunnel Dryers designed to deliver
-                energy-efficient, hygienic, and sustainable drying solutions for
-                fruits, vegetables, herbs, spices, grains, flowers, and other
-                agricultural products. Our innovative drying technology ensures
-                superior product quality while significantly reducing drying time
-                and operating costs.
-              </p>
-
+            <RevealOnScroll
+              className="max-w-[760px] space-y-3 sm:space-y-4 md:space-y-5 text-left pb-2 sm:pb-6 md:pb-8"
+              direction="up"
+              duration={0.7}
+            >
               {/* Quick Benefits */}
-              <div className="flex flex-row flex-wrap gap-1.5 sm:gap-3 pt-1 sm:pt-2 text-[9px] sm:text-xs md:text-sm font-semibold text-white">
+              <div className="flex flex-row flex-wrap gap-1.5 sm:gap-3 text-[9px] sm:text-xs md:text-sm font-semibold text-white">
 
                 <div className="flex items-center space-x-1 sm:space-x-2 bg-emerald-950/75 px-2 py-1 sm:px-4 sm:py-3 rounded-md sm:rounded-xl border border-emerald-400/40 backdrop-blur-sm">
                   <CheckCircle2 className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#4ADE80] flex-shrink-0" />
@@ -140,7 +132,7 @@ export function Home({ onOpenQuoteModal }) {
               </div>
 
               {/* CTA Buttons */}
-              <div className="pt-2 sm:pt-4 flex flex-row gap-2 sm:gap-4">
+              <div className="flex flex-row gap-2 sm:gap-4">
 
                 <button
                   onClick={() => onOpenQuoteModal && onOpenQuoteModal()}
@@ -159,7 +151,6 @@ export function Home({ onOpenQuoteModal }) {
                 </Link>
 
               </div>
-
             </RevealOnScroll>
           </div>
         </section>
