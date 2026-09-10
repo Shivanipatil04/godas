@@ -15,7 +15,7 @@ import { FAQAccordion } from '../components/FAQAccordion';
 import { companyInfo } from '../data/companyInfo';
 import { RevealOnScroll, RevealItem } from '../components/RevealOnScroll';
 import { getProducts, getTestimonials } from '../api';
-import solarTunnelHeroImg from '../assets/images/frontdryer.jpeg'; 
+import solarTunnelHeroImg from '../assets/images/frontdryer.jpeg';
 
 export function Home({ onOpenQuoteModal }) {
   const testimonialScrollRef = useRef(null);
@@ -81,33 +81,34 @@ export function Home({ onOpenQuoteModal }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent sm:from-black/25 sm:via-transparent sm:to-transparent" />
 
           {/* Hero Content */}
-          <div className="relative z-10 flex h-full min-h-[280px] w-full flex-col justify-between px-4 sm:min-h-[400px] sm:px-8 md:min-h-[850px] md:px-10 lg:min-h-[950px] lg:pl-[6vw] xl:pl-[7vw] py-6 sm:py-10 md:py-16">
+          <div className="relative z-10 flex h-full min-h-[280px] w-full flex-col justify-between px-4 sm:min-h-[400px] sm:px-8 md:min-h-[850px] md:px-10 lg:min-h-[950px] lg:pl-[6vw] xl:pl-[7vw] py-1 sm:py-10 md:py-16">
 
             <RevealOnScroll
-              className="max-w-[760px] space-y-2 sm:space-y-4 md:space-y-6 text-left pt-2 sm:pt-8 md:pt-10"
+              className="max-w-[760px] space-y-2 sm:space-y-4 md:space-y-6 text-left pt-0 sm:pt-8 md:pt-10"
               direction="up"
               duration={0.6}
             >
 
               {/* Top Badge */}
-              <div className="hidden sm:inline-flex items-center space-x-2 bg-emerald-950/90 text-emerald-100 border border-emerald-400/50 text-xs sm:text-sm font-bold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm">
-                <Sun className="w-4 h-4 text-[#F4B400]" />
+              <div className="inline-flex items-center space-x-1 sm:space-x-2 bg-emerald-950/90 text-emerald-100 border border-emerald-400/50 text-[8px] sm:text-sm font-bold px-1.5 py-0.5 sm:px-4 sm:py-2 rounded-full shadow-lg backdrop-blur-sm">
+                <Sun className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#F4B400] flex-shrink-0" />
                 <span>
                   India's Premier Industrial Solar Tunnel Dryer Manufacturer
                 </span>
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.1] text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)]">
-                High Efficiency{" "}
-                <span className="text-[#4ADE80]">
-                  solar tunnel dryers
-                </span>{" "}
+              <h1 className="text-[23px] sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.1] text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)] -mt-1 sm:mt-0 text-left">
+                <span className="block sm:inline">High Efficiency</span>{" "}
+                <span className="block sm:inline text-[#166534]">
+                  <span className="block sm:inline">solar tunnel</span>{" "}
+                  <span className="block sm:inline">dryers</span>
+                </span>
               </h1>
             </RevealOnScroll>
 
             <RevealOnScroll
-              className="max-w-[760px] space-y-3 sm:space-y-4 md:space-y-5 text-left pb-2 sm:pb-6 md:pb-8"
+              className="max-w-[760px] space-y-1 sm:space-y-4 md:space-y-5 text-left pb-2 sm:pb-6 md:pb-8 mt-[38px] sm:mt-0"
               direction="up"
               duration={0.7}
             >
@@ -136,16 +137,16 @@ export function Home({ onOpenQuoteModal }) {
 
                 <button
                   onClick={() => onOpenQuoteModal && onOpenQuoteModal()}
-                  className="bg-[#16A34A] hover:bg-[#15803D] text-white font-bold text-[10px] sm:text-sm px-3 py-2 sm:px-7 sm:py-4 rounded-md sm:rounded-xl shadow-lg shadow-emerald-950/50 transition-all flex items-center justify-center space-x-1 sm:space-x-2 group cursor-pointer border border-emerald-300/40"
+                  className="bg-[#16A34A] hover:bg-[#15803D] text-white font-bold text-[9px] sm:text-sm px-2 py-1 sm:px-7 sm:py-4 rounded-md sm:rounded-xl shadow-lg shadow-emerald-950/50 transition-all flex items-center justify-center space-x-1 sm:space-x-2 group cursor-pointer border border-emerald-300/40"
                 >
-                  <FileText className="w-3 h-3 sm:w-4 sm:h-4 text-[#F4B400] group-hover:scale-110 transition-transform" />
+                  <FileText className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#F4B400] group-hover:scale-110 transition-transform" />
                   <span>Get Free Quote</span>
-                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                  <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-white" />
                 </button>
 
                 <Link
                   to="/products"
-                  className="bg-[#F4B400] hover:bg-amber-400 text-slate-900 font-bold text-[10px] sm:text-sm px-3 py-2 sm:px-6 sm:py-4 rounded-md sm:rounded-xl shadow-md transition-all flex items-center justify-center space-x-1.5 sm:space-x-2"
+                  className="bg-[#F4B400] hover:bg-amber-400 text-slate-900 font-bold text-[9px] sm:text-sm px-2 py-1 sm:px-6 sm:py-4 rounded-md sm:rounded-xl shadow-md transition-all flex items-center justify-center space-x-1.5 sm:space-x-2"
                 >
                   <span>View Models</span>
                 </Link>
