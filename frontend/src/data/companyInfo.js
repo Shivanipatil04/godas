@@ -5,7 +5,7 @@ export const companyInfo = {
   established: "2004",
   yearsExperience: "20+",
   headquarters: "Nashik, Maharashtra, India",
-  address: "Plot No. 42, MIDC Industrial Area, Ambad, Nashik - 422010, Maharashtra, India",
+  address: "Shop No. 33, 4th Floor, Laxmi Vihar Apartment, Opp. New Era English School, Govind Nagar, Nashik – 422009, Maharashtra, India",
   phones: [
     { label: "Sales & Inquiries", number: "+91 90287 71799", raw: "+919028771799" },
     { label: "Technical Support", number: "+91 90287 71799", raw: "+919028771799" }

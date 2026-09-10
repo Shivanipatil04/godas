@@ -15,7 +15,7 @@ INSERT INTO company_info (
   '2004',
   '20+',
   'Nashik, Maharashtra, India',
-  'Plot No. 42, MIDC Industrial Area, Ambad, Nashik - 422010, Maharashtra, India',
+  'Shop No. 33, 4th Floor, Laxmi Vihar Apartment, Opp. New Era English School, Govind Nagar, Nashik – 422009, Maharashtra, India',
   '+91 90287 71799',
   '+91 90287 71799',
   '+919028771799',
