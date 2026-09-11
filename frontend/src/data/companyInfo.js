@@ -33,10 +33,9 @@ export const companyInfo = {
     "Made in India"
   ],
   socialLinks: {
-    facebook: "https://facebook.com/godasbusinesscorp",
-    instagram: "https://instagram.com/godasbusinesscorp",
-    youtube: "https://youtube.com/@godasbusinesscorp",
-    linkedin: "https://linkedin.com/company/godasbusinesscorp",
+    facebook: "https://www.facebook.com/Godassolardryer/",
+    instagram: "https://www.instagram.com/godas_solar_dryer/",
+    youtube: "https://www.youtube.com/@Godassolardryer",
     whatsapp: "https://wa.me/919028771799?text=Hello%20Godas%20Business%20Corporation,%20I%20want%20to%20inquire%20about%20Solar%20Tunnel%20Dryers"
   }
 };
